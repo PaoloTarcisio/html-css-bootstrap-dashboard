@@ -51,8 +51,35 @@ aside {
 
 .debug #principal-main #principal-main-header {
     background-color: yellow;
+    min-height: 100px;
 }
 
 .debug .row > * {
     border: 1px solid red;
+}
+
+.debug .row-cols-1 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.debug .admin {
+    border: 1px solid black;
+}
+
+.debug .card-body .row{
+    border-bottom: 1px solid gray;
+}
+
+.debug .card-body .row .col,
+.debug .card-body .row .col-1{
+    text-align: center;
+}
+
+.debug .card-body .row .col-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
