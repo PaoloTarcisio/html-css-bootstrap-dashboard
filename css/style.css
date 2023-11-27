@@ -14,7 +14,45 @@ img {
     display: block;
 }
 
+/* 
+    GENERAL
+*/
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 200px;
+    height: 100vh;
+}
+
+#principal-main {
+    width: calc(100% - 200px);
+}
+
+
 /*
     DEBUG
 */
 
+.debug header {
+    background-color: red;
+}
+
+.debug aside {
+    background-color: lightcoral;
+}
+
+.debug #principal-main {
+    background-color: pink;
+}
+
+.debug #principal-main #principal-main-header {
+    background-color: yellow;
+}
+
+.debug .row > * {
+    border: 1px solid red;
+}
